@@ -1,0 +1,299 @@
+@import 'normalize.css';
+
+@font-face {
+    font-family: 'Butler';
+    src: url('../fonts/Butler-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Butler-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+/* menu + opening */
+
+.header {
+    background-image: url('../images/backgroundelements/preeticropped.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    height: 665px;
+}
+
+.navbar {
+    top: 0rem;
+    right: .3rem;
+    padding: 1rem;
+    text-align: right;
+    z-index: 1000;
+}
+
+hr {  
+    border: .04rem solid #cad0e3;
+    margin: 0rem 0rem 0rem 0rem; 
+    padding-right: 0rem;
+    z-index: 999;
+}
+
+.opening {
+    color:#cad0e3;
+    margin: 0rem;
+    padding-left: 1rem;
+}
+
+h1 {
+    margin-bottom: 0rem;
+    font-size: 3rem;
+    font-family: Butler;
+    inline-size: 12rem;
+    line-height: 1;
+}
+
+p {
+    margin: 0rem;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+.para1 {
+    color: #cad0e3;
+    margin: 0rem;
+    padding-left: 1rem;
+    inline-size: 15rem;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.button {
+    position: relative;
+    top: 1.5rem;
+    padding-left: 1rem;
+}
+
+.button1 {
+    background-color: #576ca8;
+    color: #cad0e3;
+    font-size: 1.1rem;
+    padding: .8rem;
+    margin: 0rem;
+    border: none;
+    text-align: center;
+    z-index: 20;
+    border-radius: 30px;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.blueflower {
+    text-align:right;
+    position: relative;
+    top: 22rem;
+}
+
+/* my work */
+
+h2 {
+    font-size: 2rem;
+    padding-left: 1rem;
+    inline-size: 6rem;
+    margin-bottom: 1rem;
+    font-family: Butler;
+    color: #1b264f;
+}
+
+.linebreak {
+    border: .04rem solid #1b264f;
+}
+
+/* card 1 */
+
+.card {
+    width: 100%;
+    max-width: 21.875rem;
+    width: 329.1px;
+    height: 371px;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border: 1px solid #1b264f;
+    position: relative;
+    z-index: 40;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.cardbg {
+    position: relative;
+    z-index: 42;
+    top: 18.6rem;
+    text-align: center;
+}
+
+.cardcontent {
+   text-align: center;
+}
+/*
+.cardimg {
+
+}
+*/
+
+h3 {
+    margin: 0rem;
+    font-family: Butler;
+    color: #1b264f;
+}
+.cardtitle {
+    margin-bottom: 0rem;
+    font-size: 2rem;
+    font-family: serif;
+}
+
+.cardtype {
+    font-family: proxima-nova,sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color:#576ca8;
+}
+
+.divider {
+    border: .06rem solid #1b264f;
+    margin-top: .7rem;
+}
+
+
+.cardbuttontext {
+    /* margin-top: 1.3rem; */
+    display: inline-block;
+    position: relative;
+    bottom: 1.6rem;
+    right: .5rem;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.cardbutton {
+    display: inline-block;
+    position: relative;
+    left: 2.5rem;
+    /* top: .01rem; */
+}
+
+/* unvisited link */
+  
+a:link {
+    text-decoration: none;
+}
+  /* visited link */
+
+a:visited {
+    text-decoration: none;
+}
+
+.cardbuttontext a:visited {
+    text-decoration: none;
+    color: #1b264f;
+}
+
+  /* mouse over link */
+.cardbuttontext a:hover {
+    text-decoration: none;
+    color: #dd92a0;
+  }
+
+  /* selected link */
+a:active {
+    text-decoration: none;
+  }
+
+
+/* card 2 */
+
+/* footer */
+
+.contactme {
+    display: inline-block;
+    text-align: left;
+    padding-left: 2rem;
+    font-size: 2rem;
+    inline-size: 8rem;
+    font-family: Butler;
+}
+
+h4 {
+    margin-top: 0rem;
+    margin-bottom: .5rem;
+    color: #1b264f;
+}
+
+.contactinfo {
+    display: inline-block;
+    position: relative;
+    text-align: right;
+    width: 13rem;
+    right: 1rem;
+    bottom: .2rem;
+    font-size: 1.5rem;
+    color:#576ca8;
+}
+
+.menubar {
+    position: relative;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin-left: 3.5rem;
+    margin-right: 3.5rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding: 1rem;
+    text-decoration: none;
+  }
+
+ul li {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 1.8rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid #1b264f;
+    text-decoration: none;
+}
+
+.menubar a:visited {
+    text-decoration: none;
+    color: #576ca8;
+  }
+
+  .menubar a:hover {
+    text-decoration: none;
+    color: #dd92a0;
+}
+
+.menubar a:active {
+    text-decoration: none;
+    color: #1b264f;
+
+}
+.icons {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+h5 {
+    font-family: butler;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    color: #1b264f;
+}
