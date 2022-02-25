@@ -8,6 +8,7 @@
     font-style: normal;
 }
 
+/* header elements  */
 
 header {
     background-image: url('../images/backgroundelements/preeticropped.png');
@@ -19,9 +20,13 @@ header {
     height: 100vh;
 }
 
+/* .buttontest {
+    background-color: #576ca8;
+    border: none;
+} */
 
 .btn--menu {
-    display:flex;
+    display: flex;
     flex-direction: row-reverse;
     top: 0rem;
     right: .3rem;
@@ -82,8 +87,65 @@ a:link {
     color: #1b264f;
   }
 
+hr {  
+    border: .04rem solid #1b264f;
+    margin: 0rem 0rem 0rem 0rem; 
+    padding-right: 0rem;
+    z-index: 999;
+}
+
+h1 {
+    margin-bottom: 0rem;
+    font-size: 3rem;
+    font-family: Butler;
+    line-height: 1;
+}
+
+p {
+    margin: 0rem;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.linebreak--white {
+    border: .04rem solid #cad0e3;
+}
+
+.opening {
+    color: #cad0e3;
+    padding-left: 1rem;
+}
+
+.work_button {
+    position: relative;
+    top: 1.5rem;
+}
+
+.btn {
+    background-color: #576ca8;
+    color: #cad0e3;
+    font-size: 1.1rem;
+    padding: .8rem;
+    margin: 1rem 0rem 0rem 0rem;
+    border: none;
+    text-align: center;
+    z-index: 20;
+    border-radius: 30px;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* media queries  */
+
 
 @media screen and (min-width: 480px) {
+
+.buttontest {
+    background-color: #576ca8;
+    
+}
     header {
         background-image: url('../images/backgroundelements/preeti.png');
         background-repeat: no-repeat;
@@ -117,59 +179,3 @@ a:link {
     }
 }
 
-hr {  
-    border: .04rem solid #1b264f;
-    margin: 0rem 0rem 0rem 0rem; 
-    padding-right: 0rem;
-    z-index: 999;
-}
-
-h1 {
-    margin-bottom: 0rem;
-    font-size: 3rem;
-    font-family: Butler;
-    inline-size: 12rem;
-    line-height: 1;
-}
-
-p {
-    margin: 0rem;
-    font-family: proxima-nova,sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.linebreak--white {
-    border: .04rem solid #cad0e3;
-}
-
-.opening {
-    color: #cad0e3;
-    padding-left: 1rem;
-}
-
-.work_button {
-    position: relative;
-    top: 1.5rem;
-}
-
-.btn {
-    background-color: #576ca8;
-    color: #cad0e3;
-    font-size: 1.1rem;
-    padding: .8rem;
-    margin: 0rem;
-    border: none;
-    text-align: center;
-    z-index: 20;
-    border-radius: 30px;
-    font-family: proxima-nova,sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.blueflower {
-    text-align:right;
-    position: relative;
-    top: 22rem;
-}
