@@ -1,0 +1,175 @@
+@import 'normalize.css';
+
+@font-face {
+    font-family: 'Butler';
+    src: url('../fonts/Butler-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Butler-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+header {
+    background-image: url('../images/backgroundelements/preeticropped.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    margin: 0rem;
+    padding: 0rem;
+    height: 100vh;
+}
+
+
+.btn--menu {
+    display:flex;
+    flex-direction: row-reverse;
+    top: 0rem;
+    right: .3rem;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.menubar {
+    display: none;
+}
+
+
+ul {
+    text-decoration: none;
+}
+
+/* unvisited link */
+a.menulink:link {
+    color: #cad0e3;
+  }
+  
+  /* visited link */
+  a.menulink:visited {
+    color:#cad0e3;
+  }
+  
+  /* mouse over link */
+  a.menulink:hover {
+    color: #dd92a0;
+  }
+  
+  /* selected link */
+  a.menulink:active {
+    color: #cad0e3;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  /* unvisited link */
+a:link {
+    color: #1b264f;
+  }
+  
+  /* visited link */
+  a:visited {
+    color:#cad0e3;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #dd92a0;
+  }
+  
+  /* selected link */
+  a:active {
+    color: #1b264f;
+  }
+
+
+@media screen and (min-width: 480px) {
+    header {
+        background-image: url('../images/backgroundelements/preeti.png');
+        background-repeat: no-repeat;
+        max-width: 100%;
+        margin: 0rem;
+        padding: 0rem;
+        height: 100vh;
+    }
+
+    .btn--menu {
+        display: none;
+        
+    }
+
+    .menubar {
+        color: #cad0e3;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-items: flex-end;
+        padding: 1rem;
+        margin: 0rem;
+        font-family: proxima-nova, sans-serif;
+        font-weight: 100;
+
+    }
+
+    .menucontent {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+hr {  
+    border: .04rem solid #1b264f;
+    margin: 0rem 0rem 0rem 0rem; 
+    padding-right: 0rem;
+    z-index: 999;
+}
+
+h1 {
+    margin-bottom: 0rem;
+    font-size: 3rem;
+    font-family: Butler;
+    inline-size: 12rem;
+    line-height: 1;
+}
+
+p {
+    margin: 0rem;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.linebreak--white {
+    border: .04rem solid #cad0e3;
+}
+
+.opening {
+    color: #cad0e3;
+    padding-left: 1rem;
+}
+
+.work_button {
+    position: relative;
+    top: 1.5rem;
+}
+
+.btn {
+    background-color: #576ca8;
+    color: #cad0e3;
+    font-size: 1.1rem;
+    padding: .8rem;
+    margin: 0rem;
+    border: none;
+    text-align: center;
+    z-index: 20;
+    border-radius: 30px;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.blueflower {
+    text-align:right;
+    position: relative;
+    top: 22rem;
+}
