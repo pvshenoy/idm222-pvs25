@@ -108,6 +108,36 @@ p {
     font-style: normal;
 }
 
+.typing {
+    width: 37ch;
+    animation: typing 2s steps(37), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid;
+}
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
+  /* is this animation legal?  */
+
+
+.blueflower {
+    width: 14.41rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+}
+
 .linebreak--white {
     border: .04rem solid #cad0e3;
 }
@@ -137,17 +167,20 @@ p {
     font-style: normal;
 }
 
+.btn:hover {
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    background-color: #dd92a0;
+    color: #f9fafc;
+}
 /* media queries  */
 
 
 @media screen and (min-width: 480px) {
 
-.buttontest {
-    background-color: #576ca8;
-    
-}
+
     header {
-        background-image: url('../images/backgroundelements/preeti.png');
+        background-image: url('../images/backgroundelements/preeti2.png');
         background-repeat: no-repeat;
         max-width: 100%;
         margin: 0rem;
