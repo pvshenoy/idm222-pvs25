@@ -8,7 +8,87 @@
     font-style: normal;
 }
 
-/* header elements  */
+:root {
+    --text-color-dark: #1b264f;
+    --text-color-light: #cad0e3;
+    --accent-color-one: #576ca8;
+    --accent-color-two: #dd92a0;
+}
+/* || GENERAL STYLES */
+
+/* 
+h1 - title (48px - 3rem)
+h2 - headings (32px - 2rem)
+h3 - subheadings (24px - 1.5rem)
+h4 - small heading (20px - 1.25rem)
+*/
+
+h1 {
+    margin: 2rem 1rem 0rem 1rem;
+    /* margin-bottom: 0rem;
+    margin-left: 1rem; */
+    font-size: 3rem;
+    font-family: Butler;
+    line-height: 1;
+    color:  var(--text-color-dark);
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: Butler;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color: var(--text-color-dark);
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: Butler;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    color:var(--text-color-dark);
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-family: Butler;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    color:var(--text-color-dark);
+}
+
+p {
+    margin: 0rem;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+ul {
+    text-decoration: none;
+}
+
+
+a {
+      text-decoration: none;
+}
+
+hr {  
+    border: .04rem solid var(--text-color-dark);
+    margin: 0rem 0rem 0rem 0rem; 
+    padding-right: 0rem;
+    animation: line 1s cubic-bezier(0.37, 0, 0.63, 1) 1s forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: 999;
+}
+
+iframe {
+    width: 100%;
+    min-height: 21rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 header {
     background-image: url('../images/backgroundelements/preeticropped.png');
@@ -20,10 +100,11 @@ header {
     height: 100vh;
 }
 
-/* .buttontest {
-    background-color: #576ca8;
-    border: none;
-} */
+
+
+
+
+/* || BUTTONS / LISTS / LINKS / DIVIDES */
 
 .btn--menu {
     display: flex;
@@ -38,75 +119,120 @@ header {
     display: none;
 }
 
-
-ul {
-    text-decoration: none;
+.work_button {
+    position: relative;
+    top: 1.5rem;
 }
 
-/* unvisited link */
-a.menulink:link {
-    color: #cad0e3;
-  }
-  
-  /* visited link */
-  a.menulink:visited {
-    color:#cad0e3;
-  }
-  
-  /* mouse over link */
-  a.menulink:hover {
-    color: #dd92a0;
-  }
-  
-  /* selected link */
-  a.menulink:active {
-    color: #cad0e3;
-  }
-
-  a {
-      text-decoration: none;
-  }
-
-  /* unvisited link */
-a:link {
-    color: #1b264f;
-  }
-  
-  /* visited link */
-  a:visited {
-    color:#cad0e3;
-  }
-  
-  /* mouse over link */
-  a:hover {
-    color: #dd92a0;
-  }
-  
-  /* selected link */
-  a:active {
-    color: #1b264f;
-  }
-
-hr {  
-    border: .04rem solid #1b264f;
-    margin: 0rem 0rem 0rem 0rem; 
-    padding-right: 0rem;
-    z-index: 999;
-}
-
-h1 {
-    margin-bottom: 0rem;
-    font-size: 3rem;
-    font-family: Butler;
-    line-height: 1;
-}
-
-p {
-    margin: 0rem;
+.btn {
+    background-color: var(--accent-color-one);
+    color: var(--text-color-light);
+    font-size: 1.1rem;
+    padding: .8rem;
+    margin: 1rem 0rem 0rem 0rem;
+    border: none;
+    text-align: center;
+    z-index: 20;
+    border-radius: 30px;
     font-family: proxima-nova,sans-serif;
     font-weight: 100;
     font-style: normal;
 }
+
+.btn:hover {
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+    background-color: #dd92a0;
+    color: #f9fafc;
+}
+
+.linebreak--white {
+    border: .04rem solid var(--text-color-light);
+}
+
+.work_divide {
+    margin: 1.5rem 0rem;
+    margin-bottom: 2rem;
+}
+
+     /*  desktop homepage menu link styling */
+
+a.menulink:link {
+    color: var(--text-color-light);
+}
+  
+
+a.menulink:visited {
+    color:var(--text-color-light);
+}
+  
+
+a.menulink:hover {
+    color: #dd92a0;
+}
+
+
+a.menulink:active {
+    color: var(--text-color-light);
+}
+
+      /* general link styles  */
+a:link {
+    color: var(--text-color-dark);
+}
+  
+  
+a:visited {
+    color:var(--text-color-light);
+}
+  
+  
+a:hover {
+    color: #dd92a0;
+}
+  
+  
+a:active {
+    color: var(--text-color-dark);
+}
+
+
+
+/* || SPECIFIC STYLES */
+
+
+.heading--white {
+    color: var(--text-color-light);
+}
+
+.paragraph--white {
+    color: var(--text-color-light);
+}
+
+.flower {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 133vh; 
+}
+
+.blueflower {
+    width: 14.41rem;
+    display: flex;
+    flex-direction: row-reverse;  
+}
+
+.opening {
+    color: var(--text-color-light);
+    padding-left: 1rem;
+}
+
+
+
+
+
+/* || ANIMATIONS */
+
+/* transition: [property] [duration] [timing-function] [delay];   */
 
 .typing {
     width: 37ch;
@@ -128,52 +254,39 @@ p {
     }
   }
 
-  /* is this animation legal?  */
+  /* is this typing animation legal? I got it from codepen */
 
-
-.blueflower {
-    width: 14.41rem;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: end;
+.spin {
+    animation: spin 5s infinite linear; 
 }
 
-.linebreak--white {
-    border: .04rem solid #cad0e3;
+@keyframes spin {
+    from {
+          transform: rotate(0deg)
+        }
+    to {
+          transform: rotate(359deg)
+    }
 }
 
-.opening {
-    color: #cad0e3;
-    padding-left: 1rem;
+@keyframes line {
+    from {
+        transform: scaleX(0);
+    }
+
+    to {
+        transform: scaleX(1);
+        /* width: 50%; */
+    }
 }
 
-.work_button {
-    position: relative;
-    top: 1.5rem;
-}
 
-.btn {
-    background-color: #576ca8;
-    color: #cad0e3;
-    font-size: 1.1rem;
-    padding: .8rem;
-    margin: 1rem 0rem 0rem 0rem;
-    border: none;
-    text-align: center;
-    z-index: 20;
-    border-radius: 30px;
-    font-family: proxima-nova,sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
 
-.btn:hover {
-    transition-duration: .3s;
-    transition-timing-function: ease-in-out;
-    background-color: #dd92a0;
-    color: #f9fafc;
-}
-/* media queries  */
+
+
+
+
+/* || MEDIA QUERIES  */
 
 
 @media screen and (min-width: 480px) {
