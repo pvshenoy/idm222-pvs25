@@ -259,14 +259,16 @@ a:active {
     text-align: left;
     margin-top: .5rem;
     font-size: 1.3rem;
-    font-weight: 300;
+    font-weight: 100;
     margin-bottom: 0rem;
 }
 
 .flower {
-    display: flex;
-    flex-direction: row-reverse;
-    height: 120vh; 
+    /* display: flex;
+    flex-direction: row-reverse; */
+    position: fixed;
+    top: 85vh;
+    right: 0;
 }
 
 .blueflower {
@@ -283,8 +285,6 @@ a:active {
 .contact_me {
     display: flex;
     flex-direction: row;
-    max-width: 20.563rem;
-    overflow: hidden;
 }
 
 .contact_heading {
@@ -295,6 +295,7 @@ a:active {
 .contact_text {
     text-align: right;
     margin-left: auto;
+    margin-top: 0rem;
     font-size: 1.5rem;
     line-height: 1.25;
     color: var(--accent-color-one);
@@ -539,6 +540,14 @@ u:hover {
 .bio {
     margin: 0rem 2rem 2rem 2rem;
 }
+
+.resume {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0rem auto 2rem auto;
+    font-size: 1.1rem;
+}
 /* || display: none; */
 
 .menubar {
@@ -626,7 +635,27 @@ u:hover {
 
 /* || MEDIA QUERIES  */
 
-            /* tablet size and up  */
+@media screen and (max-width: 320px) {
+
+    .menu_item {
+        padding: 1rem;
+        margin: 2rem 2rem;
+    }
+
+    .card {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    .arrow {
+        width: 50%;
+        margin-right: 2rem;
+        padding-top: 1.8rem;
+    }
+}
+
+            /* bigger tablet size and up  */
+
 @media screen and (min-width: 480px) { 
 
     /* || display: none; */
@@ -654,13 +683,25 @@ u:hover {
 
     .paragraph--white {
         font-size: 1.5rem;
+        font-weight: 300;
     }
+
+    .flower {
+        top: 85vh;
+    }
+
+    .blueflower {
+        width: 20rem;
+        display: flex;
+        flex-direction: row-reverse;  
+    } 
 
     .btn {
         font-size: 1.5rem;
         padding: 1rem;
         margin-top: 1.5rem;
     }
+
     .menubar {
         list-style-type: none;
         display: flex;
@@ -701,13 +742,11 @@ u:hover {
 
 .footer_desktop {
     display: flex;
-    flex-direction: row;
-    justify-content: start;
 }
 
-.palette_wrapper {
-    background-color: var(--text-color-dark);
-    width: 30%;
+.footer_wrapper {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .palette {
@@ -763,42 +802,30 @@ u:hover {
     background-color: var(--text-color-light);
 }
 
-.footer_desktop {
+.contact_me {
     display: flex;
     flex-direction: row;
+    justify-items: right;
+    flex-wrap: wrap;
+    margin-left: auto;
 }
 
+
 .contact_heading {
-    margin: auto;
+    margin: auto 2rem;
     text-align: left;
-    padding-left: 2rem;
     line-height: 1;
 }
 .contact_text {
     text-align: right;
-    margin: auto;
-    padding-left: 4rem;
+    margin: auto 2rem auto 4rem;
     font-size: 1.5rem;
     line-height: 1.25;
     color: var(--accent-color-one);
 }
 
-.contact_me {
-    display: flex;
-    flex-direction: row;
-    overflow: hidden;
-    max-width: 60rem;
-}
-
-.thanks {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-}
 .socials {
-    max-width: 5rem;
-    margin: auto;
-    padding-left: 2rem;
+    margin: auto 1rem;
 }
 
 /* || article pages - desktop*/
@@ -942,4 +969,36 @@ p {
     margin: 4.5rem 2rem 0rem 1rem;
 }
 
+.resume {
+    font-size: 1.1rem;
+}
+}
+
+@media screen and (min-width: 480px) and (max-width: 700px) {
+    .btn--menu {
+        display: none;
+    }
+
+    .menu_wrapper {
+        display: flex;
+    }
+
+    .footer_desktop {
+        display: none;
+    }
+
+    .contact_me {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: auto;
+    }
+
+    .contact_heading {
+        margin: 0rem;
+    }
+
+    .contact_text {
+        margin: 0rem;
+    }
 }
