@@ -62,7 +62,7 @@ p {
     font-family: proxima-nova,sans-serif;
     font-weight: 100;
     font-style: normal;
-    max-width: 50vw;
+    line-height: 1.5rem;
 }
 
 ul {
@@ -77,6 +77,7 @@ ul {
 
 a {
       text-decoration: none;
+      font-family: proxima-nova, sans-serif;
 }
 
 hr {  
@@ -106,9 +107,16 @@ header {
     height: 100vh;
 }
 
+/* .centered {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+} */
 
-
-
+.row {
+    display: flex;
+    flex-direction: row;
+}
 
 
 /* || BUTTONS / LISTS / LINKS / DIVIDES */
@@ -150,6 +158,13 @@ header {
     color: #f9fafc;
 }
 
+.hyperlink {
+    text-decoration: underline;
+}
+.hyperlink:hover {
+    color: var(--accent-color-two);
+    text-decoration: underline;
+}
 .linebreak--white {
     border: .04rem solid var(--text-color-light);
 }
@@ -234,7 +249,7 @@ a:active {
 
 .heading--white {
     color: var(--text-color-light);
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-left: 0rem;
     font-size: 4rem;
 }
@@ -243,8 +258,8 @@ a:active {
     color: var(--text-color-light);
     text-align: left;
     margin-top: .5rem;
-    font-size: 1.5rem;
-    font-weight: 100;
+    font-size: 1.3rem;
+    font-weight: 300;
     margin-bottom: 0rem;
 }
 
@@ -342,16 +357,117 @@ a:active {
     margin-bottom: 0rem;
     margin-right: 6rem;
     text-align: center; 
-    padding: 1.5rem 0rem;
+    padding: 1.4rem 0rem;
     font-size: 1.25rem; 
 }
 
 .arrow {
-    margin-left: 1.75rem;
-    padding-top: 1.75rem;
+    margin-left: 1.50rem;
+    padding-top: 1.60rem;
 }
 
 /* || mobile article pages */
+
+.article {
+    display: flex; 
+    flex-direction: column
+}
+
+.article_title {
+    margin-left: 0rem;
+}
+
+.article_info {
+    margin-left: 1rem;
+}
+.article_wrapper {
+    margin: 0rem 1rem 1rem 1rem;
+}
+
+.article_divide {
+    max-width: 80%;
+    margin: 1.5rem 0rem 1.5rem 0rem;
+}
+
+.hero_img {
+    max-height: 75vh;
+    width: 100%;
+    margin: 2rem 0rem 1rem 0rem;
+}
+
+.article_img {
+    width: 100%;
+    margin: 1rem 0rem;
+}
+
+.inline_bulletpoints {
+    display: flex;
+    flex-direction: row;
+}
+
+.bulletpoint {
+    margin-right: 1rem;
+}
+
+.strengths {
+    padding-right: 1.5rem;
+}
+
+.bulletpoint_content {
+    margin-top: 0rem;
+    line-height: 1.5rem;
+    max-width: 50vw;
+}
+
+.solution {
+    margin-top: 0rem;
+    margin-right: 2rem;
+}
+
+.key_features {
+    margin: auto;
+}
+
+.key_list {
+    margin: 1rem 0rem 1rem 2rem;
+    line-height: 1.5rem;
+}
+
+
+.article_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+
+.article_btn {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+}
+
+.nav_btn {
+    justify-content: center;
+    padding: .5rem 1rem;
+    border: 1px solid var(--text-color-dark);
+    border-radius: 50%;
+    background-color: rgba(87, 108, 168, .3);
+    width: 1vw;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+
+.nav_btn:hover {
+    background-color: rgba(221, 146, 160, .3);
+    border: 1px solid var(--accent-color-two);
+}
+
+u:hover {
+    color: var(--accent-color-two);
+}
 
 
         /* EXO */
@@ -361,7 +477,68 @@ a:active {
         /* GENIUS */
 
 
+/* || about me page */
 
+.profile_pic {
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
+    margin-top: 2rem;
+    width: 100%
+}
+.test {
+    margin: 0rem 2rem 0rem 2rem;
+}
+.relative_text {
+    position: relative;
+    bottom: 6rem;
+    z-index: 89;
+    margin: 0rem 0rem 0rem 2rem;
+    font-size: 3.5rem;
+}
+
+.color_1 {
+    --color-1: var(--text-color-light);
+    --color-2: var(--accent-color-one);
+}
+
+.color_2 {
+    --color-1: var(--accent-color-one);
+    --color-2: var(--text-color-dark);
+}
+
+.profile_content {
+    position: relative;
+    bottom: 4.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.profile_link {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-weight: 100;
+    padding-bottom: .5rem;
+}
+
+.about_divide {
+    position: relative;
+    bottom: 2.5rem;
+    height: 10rem;
+    width: 1rem;
+    border-right: 2px solid var(--accent-color-two);
+    margin: 0rem auto;
+    animation: lineY 1s cubic-bezier(0.37, 0, 0.63, 1) 2s forwards;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+.bio {
+    margin: 0rem 2rem 2rem 2rem;
+}
 /* || display: none; */
 
 .menubar {
@@ -376,28 +553,6 @@ a:active {
 /* || ANIMATIONS */
 
 /* transition: [property] [duration] [timing-function] [delay];   */
-
-.typing {
-    width: 70ch;
-    animation: typing 2s steps(70), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 1px solid;
-}
-
-@keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
-
-  /* is this typing animation legal? I got it from codepen */
 
 .spin {
     animation: spin 5s infinite linear; 
@@ -423,6 +578,16 @@ a:active {
     }
 }
 
+@keyframes lineY {
+    from {
+        transform: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(1);
+    }
+}
+
 @keyframes flip {
     0% {
         transform: rotateY(0deg);
@@ -440,6 +605,23 @@ a:active {
         transform: rotateY(180deg);
     }
 }
+
+.color_anim {
+    animation: color-change 4s linear infinite;
+}
+
+@keyframes color-change {
+    0% {
+        color: var(--color-1);
+    }
+    50% {
+        color: var(--color-2);
+    }
+    100% {
+        color: var(--color-1);
+    }
+}
+
 
 
 /* || MEDIA QUERIES  */
@@ -466,7 +648,19 @@ a:active {
         padding: 0rem;
         height: 100vh;
     }
+    .heading--white {
+        font-size: 6rem;
+    }
 
+    .paragraph--white {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1.5rem;
+        padding: 1rem;
+        margin-top: 1.5rem;
+    }
     .menubar {
         list-style-type: none;
         display: flex;
@@ -474,6 +668,7 @@ a:active {
         justify-items: flex-end;
         padding: 1rem;
         margin: 0rem;
+        font-size: 1.5rem;
         font-family: proxima-nova, sans-serif;
         font-weight: 100;
     }
@@ -608,10 +803,16 @@ a:active {
 
 /* || article pages - desktop*/
 
+p {
+    margin: 1rem 0rem;
+    font-family: proxima-nova,sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    max-width: 50vw;
+    line-height: 1.5rem;
+}
 
-
-
-.article_hero {
+.article {
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-areas: "title picture" ". picture";
@@ -619,29 +820,32 @@ a:active {
 }
 .article_wrapper {
     grid-area: picture;
+    margin: 0rem 14rem 1rem 2rem;
 }
 
 .article_title  {
     margin-left: 0rem;
+    margin-right: 1rem;
 }
+
 .article_info {
     grid-area: title;
     margin-left: 3rem;
 }
 
-.article_divide {
+/* .article_divide {
     margin: 1.5rem 0rem 1.5rem 0rem;
-}
+} */
 
 .hero_img {
     max-height: 75vh;
-    width: 70%;
+    width: 100%;
     grid-area: picture;
     margin: 2rem 0rem 1rem 0rem;
 }
 
 .article_img {
-    width: 70%;
+    width: 100%;
     margin: 1rem 0rem;
 }
 
@@ -649,15 +853,93 @@ a:active {
     max-width: 70%;
 }
 
-
-        /* EXO */
-
-        /* NEBULA */
-
-        /* GENIUS */
-
-
-
-
+.bulletpoint {
+    margin-right: 5rem;
 }
 
+.article_btn {
+    margin: auto;
+}
+
+.article_nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav_btn {
+    padding: .5rem .8rem;
+    margin: auto;
+}
+
+/* about me page */
+
+.relative_text {
+    position: relative;
+    bottom: 18rem;
+    left: 15.5rem;
+    z-index: 89;
+    margin: 0rem;
+    font-size: 4rem;
+}
+
+
+.color_1 {
+    --color-1: var(--text-color-dark);
+    --color-2: var(--accent-color-one);
+}
+
+.color_2 {
+    --color-1: var(--accent-color-one);
+    --color-2: var(--text-color-dark);
+}
+
+.about_me {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.profile {
+    margin: 3rem auto 0rem auto;
+}
+
+.profile_pic {
+    width: 20rem;
+    margin: 0rem 0rem 0rem 0rem;
+}
+
+.profile_content {
+    position: relative;
+    bottom: 8rem;
+    display: flex; 
+    flex-direction: column;
+    align-content: flex-start;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.profile_link {
+    padding-bottom: .5rem;
+    font-weight: 100;
+}
+
+.about_divide {
+    position: static;
+    width: 8rem;
+    height: 1rem;
+    margin: 14rem 1rem auto 0rem;
+    font-size: 1.5rem;
+    padding-bottom: -8rem;
+    border-right: none;
+    border-bottom: 2px solid var(--accent-color-two);
+    z-index: 10;
+    animation: none;
+    transform: none;
+}
+
+.bio {
+    margin: 4.5rem 2rem 0rem 1rem;
+}
+
+}
