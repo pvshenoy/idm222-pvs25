@@ -366,6 +366,7 @@ a:active {
 .card_divide {
     margin-top: 1rem;
     animation: none;
+    transform: scaleX(1);
 }
 
 .cardbuttons {
@@ -753,6 +754,17 @@ u:hover {
     }
 }
 
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translate(40px 0px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0px 0px);
+    }
+}
+
 
 /* || MEDIA QUERIES  */
 
@@ -990,7 +1002,7 @@ u:hover {
     .article_wrapper {
         grid-area: picture;
         margin: 0rem 14rem 1rem 2rem;
-        animation: fade 1s ease-in forwards 2s;
+        animation: fade 1s ease-in forwards 1s;
         opacity: 0;
     }
 
@@ -1002,7 +1014,7 @@ u:hover {
     .article_info {
         grid-area: title;
         margin-left: 3rem;
-        animation: fade 1s ease-in forwards 1s;
+        animation: fade 1s ease-in forwards .5s;
         opacity: 0;
     }
 
@@ -1074,6 +1086,7 @@ u:hover {
 
     .profile {
         margin: 3rem auto 0rem auto;
+        animation: fade ease-in 1s forwards; 
     }
 
     .profile_pic {
@@ -1106,12 +1119,16 @@ u:hover {
         border-right: none;
         border-bottom: 2px solid var(--accent-color-two);
         z-index: 10;
-        animation: none;
-        transform: none;
+        animation: line 1s cubic-bezier(0.37, 0, 0.63, 1) .5s forwards;
+        transform: scaleX(0);
+        transform-origin: left;
     }
 
     .bio {
         margin: 4.5rem 2rem 0rem 1rem;
+        animation: fadeUp 1s ease-in forwards 1s;
+        opacity: 0;
+        transform-origin: right;
     }
 
     .resume {
